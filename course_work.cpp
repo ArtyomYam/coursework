@@ -114,7 +114,10 @@ int main() {
             cv::namedWindow("Display window", cv::WINDOW_AUTOSIZE);  cv::imshow("Display window", image_red);
             cv::waitKey(1000);
         }
-
+//        std::this_thread::sleep_for(std::chrono::nanoseconds(10000000000));
+//        cv::namedWindow("Display window", cv::WINDOW_AUTOSIZE);  cv::imshow("Display window", image);
+//        cv::waitKey(1000);
+    }
     cv::namedWindow("Display window", cv::WINDOW_AUTOSIZE);  cv::imshow("Display window", final_image);
     cv::waitKey(0);
     return 0;
